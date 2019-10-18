@@ -6,16 +6,17 @@ Instagram clone with Android Studio
 ## Description
 Instagram clone with Dark Mode UI done using Android Studio and Firebase.
 
-Instruction on usage:
+***Instruction on usage:***
 ````
-Clone or download this repositories
-unzip and open with Android Studio
-Create and connect this application with Firebase
-Activate Login with Email/Password in Firebase
-run
+1. Clone or download this repositories
+2. Unzip and open with Android Studio
+3. Create and connect this application with Firebase
+4. Activate Login with Email/Password in Firebase
+5. Run
 ````
 
-Here are details for Firebase database structure (must have!):
+***Here are details for Firebase database structure (must have!):***
+````
 1. Comments
     - current
       - id : 0
@@ -25,6 +26,7 @@ Here are details for Firebase database structure (must have!):
 5. Posts
 6. Story
 7. Users
+````
 
 If you have anything to ask or would like to share your opinion, can email me:
 > **__nabilfarhan.dev@gmail.com__**
