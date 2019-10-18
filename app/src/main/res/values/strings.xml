@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Instagram7</string>
+
+    <string name="home_fragment">Home</string>
+    <string name="search_fragment">Search</string>
+    <string name="notification_fragment">Notification</string>
+    <string name="profile_fragment">Profile</string>
+</resources>

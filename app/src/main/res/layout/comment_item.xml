@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/colorPrimaryDark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/image_profile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_toStartOf="@id/delete_comment"
+        android:layout_toEndOf="@id/image_profile">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/colorFontWhite"
+            android:id="@+id/username"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/colorFontWhite"
+            android:id="@+id/comment"
+            android:maxLines="5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="3dp"
+        android:id="@+id/delete_comment"
+        android:textSize="12sp"
+        android:text="Delete"
+        android:textColor="@color/colorFontBlack"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

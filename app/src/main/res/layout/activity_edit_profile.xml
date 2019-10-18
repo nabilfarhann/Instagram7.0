@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".EditProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:id="@+id/close"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/rubik_bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorFontWhite"
+                    android:layout_toEndOf="@+id/close"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/save"
+                    android:textSize="16sp"
+                    android:textColor="@color/selectedPeachColor"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:id="@+id/image_profile"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/tv_change"
+            android:textSize="16sp"
+            android:fontFamily="@font/rubik_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full name:"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:padding="10dp"
+            android:fontFamily="@font/rubik_regular"
+            android:textColorHint="@color/textHintColorSecond"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Full name"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="Username"
+            android:padding="10dp"
+            android:fontFamily="@font/rubik_regular"
+            android:textColorHint="@color/textHintColorSecond"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bio:  (Tell us something about you)"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bio"
+            android:padding="10dp"
+            android:fontFamily="@font/rubik_regular"
+            android:textColorHint="@color/textHintColorSecond"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Bio"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"/>
+
+    </LinearLayout>
+
+</LinearLayout>

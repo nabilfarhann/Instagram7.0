@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ImageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/back_button"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_back"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:id="@+id/image_profile"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_savee"
+                android:layout_centerVertical="true"
+                android:id="@+id/share_button"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentEnd="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                android:layout_centerVertical="true"
+                android:id="@+id/delete_image"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardView"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="20dp">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postActivity_image"
+            android:background="@color/colorPrimaryDark"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/like_comment"
+        android:layout_below="@id/cardView"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/like"
+            android:src="@drawable/ic_favorite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/rubik_medium"
+            android:id="@+id/likes"
+            android:layout_toEndOf="@+id/like"
+            android:textSize="13sp"
+            android:text="0"
+            android:textColor="#838387"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/comment"
+            android:src="@drawable/ic_comment"
+            android:layout_toEndOf="@+id/likes"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1.5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/rubik_medium"
+            android:layout_toEndOf="@+id/comment"
+            android:layout_centerVertical="true"
+            android:text="0 Comments"
+            android:textSize="13sp"
+            android:id="@+id/comments"
+            android:textColor="#838387"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_more"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/more"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_below="@id/like_comment"
+        android:id="@+id/description"
+        android:text="Some description"
+        android:textColor="@color/colorFontWhite"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/description"
+        android:layout_above="@id/bottom"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom"
+        android:padding="7dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edittext_comment">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/image_profile_comment"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_profile_comment"
+            android:hint="Add a comment..."
+            android:textSize="16sp"
+            android:textColorHint="#A1A0A0"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/rubik_regular"
+            android:id="@+id/add_comment"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post"
+            android:text="POST"
+            android:fontFamily="@font/rubik_bold"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

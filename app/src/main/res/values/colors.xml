@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C1B24</color>
+    <color name="colorPrimaryDark">#1C1B24</color>
+    <color name="colorPrimarySecond">#455CDE</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorFontWhite">#FFFFFF</color>
+    <color name="colorFontBlack">#181818</color>
+    <color name="textHintColor">#2D2D30</color>
+    <color name="selectedPeachColor">#e25d64</color>
+    <color name="secondaryDark">#212128</color>
+    <color name="textHintColorSecond">#838387</color>
+</resources>
