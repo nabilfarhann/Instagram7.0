@@ -26,6 +26,9 @@ Instagram clone with Dark Mode UI done using Android Studio and Firebase.
 5. Posts
 6. Story
 7. Users
+
+Don't forget to upload default profile image in Firebase Storage:
+name the image --> 'profileimage'
 ````
 
 If you have anything to ask or would like to share your opinion, can email me:
