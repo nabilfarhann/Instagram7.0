@@ -10,7 +10,7 @@ Instagram clone with Dark Mode UI done using Android Studio and Firebase.
 ````
 1. Clone or download this repositories
 2. Unzip and open with Android Studio
-3. Create and connect this application with Firebase
+3. Create and connect this application with Firebase (google-services.json)
 4. Activate Login with Email/Password in Firebase
 5. Run
 ````
