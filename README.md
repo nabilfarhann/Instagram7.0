@@ -3,6 +3,8 @@ Instagram clone with Android Studio
 
 ![Instagram7.0](https://github.com/nabilfarhann/Instagram7.0/blob/master/Screenshot/Instagram7.0.jpg?raw=true)
 
+:star2::star2: **Don't forget to give this repo a star!** :star2::star2:
+
 ## Description
 Instagram clone with Dark Mode UI done using Android Studio and Firebase.
 
